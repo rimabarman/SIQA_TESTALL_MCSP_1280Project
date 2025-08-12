@@ -12,6 +12,11 @@ packages:
   gitUrl: https://github.com/Karthik-V-IBM-10
   gitUsername: rimabarman
   gitBranch: main
+- name: SIQA_OriginTest_OnPremAssets
+  gitServerName: rimaSCName
+  gitUrl: https://github.com/vijetadixit
+  gitUsername: rimabarman
+  gitBranch: Test2
 services:
 - serviceName: project.siqa_testall_mcsp_1280.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.operations.actions:DBNewInsert1
   packages:
