@@ -40,7 +40,7 @@ services:
   packages:
   - name: WmPublic
     version: 11.1.0.0.2068
-- serviceName: project.siqa_testall_mcsp_1280.integrations:Copy_EdgeFlowserviceWithExistingEdS
+- serviceName: project.siqa_testall_mcsp_1280.integrations:EdgeFlowserviceWithExistingEdS
   packages:
   - name: SIQA_TESTALL_MCSP_1280Project
     version: "1.0"
@@ -52,14 +52,6 @@ services:
   packages:
   - name: WmPublic
     version: 11.1.0.0.2068
-- serviceName: project.siqa_testall_mcsp_1280.integrations:EdgeFlowserviceWithExistingEdS
-  packages:
-  - name: SIQA_TESTALL_MCSP_1280Project
-    version: "1.0"
-  - name: TPP_services_in_FCS
-    version: "1.0"
-  - name: SIQA_OriginTest_OnPremAssets
-    version: "1.0"
 - serviceName: project.siqa_testall_mcsp_1280.integrations:SIQAAdapterFlow
   packages:
   - name: SIQA_TESTALL_MCSP_1280Project
