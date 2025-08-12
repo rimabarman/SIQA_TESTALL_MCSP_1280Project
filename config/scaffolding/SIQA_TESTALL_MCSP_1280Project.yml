@@ -24,3 +24,15 @@ services:
   packages:
   - name: WmPublic
     version: 11.1.0.0.2068
+- serviceName: project.siqa_testall_mcsp_1280.integrations:SIQA_ThirdPPEdgeFS
+  packages:
+  - name: SIQA_TESTALL_MCSP_1280Project
+    version: "1.0"
+- serviceName: Basics_1:ComplexFS
+  packages:
+  - name: SIQA_TESTALL_MCSP_1280Project
+    version: "1.0"
+- serviceName: services:addInts
+  packages:
+  - name: TPP_services_in_FCS
+    version: "1.0"
