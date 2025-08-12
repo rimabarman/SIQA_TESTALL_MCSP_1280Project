@@ -19,7 +19,22 @@ packages:
   gitUrl: https://github.com/vijetadixit
   gitUsername: rimabarman
   gitBranch: Test2
+- name: WmJDBCAdapter
+  wpmServer: https://packages.webmethods.io
+  wpmRegistry: licensed
 services:
+- serviceName: project.siqa_testall_mcsp_1280.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections:Database_1
+  packages:
+  - name: SIQA_TESTALL_MCSP_1280Project
+    version: "1.0"
+  - name: TPP_services_in_FCS
+    version: "1.0"
+  - name: SIQA_OriginTest_OnPremAssets
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
 - serviceName: project.siqa_testall_mcsp_1280.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.operations.actions:DBNewInsert1
   packages:
   - name: SIQA_TESTALL_MCSP_1280Project
@@ -28,6 +43,10 @@ services:
     version: "1.0"
   - name: SIQA_OriginTest_OnPremAssets
     version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
 - serviceName: project.siqa_testall_mcsp_1280.integrations:AlertsCRTAndERT
   packages:
   - name: SIQA_TESTALL_MCSP_1280Project
@@ -36,6 +55,10 @@ services:
     version: "1.0"
   - name: SIQA_OriginTest_OnPremAssets
     version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
 - serviceName: pub.alert:emit
   packages:
   - name: WmPublic
@@ -48,6 +71,10 @@ services:
     version: "1.0"
   - name: SIQA_OriginTest_OnPremAssets
     version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
 - serviceName: pub.math:addInts
   packages:
   - name: WmPublic
@@ -60,6 +87,10 @@ services:
     version: "1.0"
   - name: SIQA_OriginTest_OnPremAssets
     version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
 - serviceName: project.siqa_testall_mcsp_1280.integrations:SIQAAdapterFlow
   packages:
   - name: SIQA_TESTALL_MCSP_1280Project
@@ -68,6 +99,10 @@ services:
     version: "1.0"
   - name: SIQA_OriginTest_OnPremAssets
     version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
 - serviceName: project.siqa_testall_mcsp_1280.integrations:SIQA_E2E_Mon_Test
   packages:
   - name: SIQA_TESTALL_MCSP_1280Project
@@ -76,6 +111,10 @@ services:
     version: "1.0"
   - name: SIQA_OriginTest_OnPremAssets
     version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
 - serviceName: pub.string:bytesToString
   packages:
   - name: WmPublic
@@ -88,6 +127,10 @@ services:
     version: "1.0"
   - name: SIQA_OriginTest_OnPremAssets
     version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
 - serviceName: Basics_1:ComplexFS
   packages:
   - name: SIQA_OriginTest_OnPremAssets
@@ -152,6 +195,10 @@ services:
     version: "1.0"
   - name: SIQA_OriginTest_OnPremAssets
     version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
 - serviceName: pub.string:stringToBytes
   packages:
   - name: WmPublic
@@ -160,3 +207,50 @@ services:
   packages:
   - name: WmPublic
     version: 11.1.0.0.2068
+configurationVariables:
+  ? artConnection.SIQA_TESTALL_MCSP_1280Project.project.siqa_testall_mcsp_1280.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.startupRetryCount
+  : "0"
+  ? artConnection.SIQA_TESTALL_MCSP_1280Project.project.siqa_testall_mcsp_1280.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.poolIncrementSize
+  : "1"
+  ? artConnection.SIQA_TESTALL_MCSP_1280Project.project.siqa_testall_mcsp_1280.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.minimumPoolSize
+  : "1"
+  ? artConnection.SIQA_TESTALL_MCSP_1280Project.project.siqa_testall_mcsp_1280.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.databaseName
+  : MYSQL_DATABASE
+  ? artConnection.SIQA_TESTALL_MCSP_1280Project.project.siqa_testall_mcsp_1280.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.otherProperties
+  : loginTimeout=60;driverType=thin;
+  ? artConnection.SIQA_TESTALL_MCSP_1280Project.project.siqa_testall_mcsp_1280.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.dbType
+  : MySQL
+  ? artConnection.SIQA_TESTALL_MCSP_1280Project.project.siqa_testall_mcsp_1280.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.password
+  : "{AES}D6/2AGfsSWDOcWCLrORnEQ=="
+  ? artConnection.SIQA_TESTALL_MCSP_1280Project.project.siqa_testall_mcsp_1280.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.maximumPoolSize
+  : "10"
+  ? artConnection.SIQA_TESTALL_MCSP_1280Project.project.siqa_testall_mcsp_1280.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.transactionType
+  : NO_TRANSACTION
+  ? artConnection.SIQA_TESTALL_MCSP_1280Project.project.siqa_testall_mcsp_1280.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.startupBackoffSecs
+  : "10"
+  ? artConnection.SIQA_TESTALL_MCSP_1280Project.project.siqa_testall_mcsp_1280.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.trustStore
+  : ""
+  ? artConnection.SIQA_TESTALL_MCSP_1280Project.project.siqa_testall_mcsp_1280.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.keyStore
+  : ""
+  ? artConnection.SIQA_TESTALL_MCSP_1280Project.project.siqa_testall_mcsp_1280.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.datasourceClass
+  : com.mysql.cj.jdbc.MysqlDataSource
+  ? artConnection.SIQA_TESTALL_MCSP_1280Project.project.siqa_testall_mcsp_1280.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.poolable
+  : "false"
+  ? artConnection.SIQA_TESTALL_MCSP_1280Project.project.siqa_testall_mcsp_1280.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.portNumber
+  : "3306"
+  ? artConnection.SIQA_TESTALL_MCSP_1280Project.project.siqa_testall_mcsp_1280.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.user
+  : siqatest
+  ? artConnection.SIQA_TESTALL_MCSP_1280Project.project.siqa_testall_mcsp_1280.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.networkProtocol
+  : tcp
+  ? artConnection.SIQA_TESTALL_MCSP_1280Project.project.siqa_testall_mcsp_1280.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.expireTimeout
+  : "1000"
+  ? artConnection.SIQA_TESTALL_MCSP_1280Project.project.siqa_testall_mcsp_1280.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.driverType
+  : Driver_test
+  ? artConnection.SIQA_TESTALL_MCSP_1280Project.project.siqa_testall_mcsp_1280.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.blockingTimeout
+  : "1000"
+  ? artConnection.SIQA_TESTALL_MCSP_1280Project.project.siqa_testall_mcsp_1280.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.heartBeatInterval
+  : "0"
+  ? artConnection.SIQA_TESTALL_MCSP_1280Project.project.siqa_testall_mcsp_1280.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.serverName
+  : 9.46.196.248
+  ? artConnection.SIQA_TESTALL_MCSP_1280Project.project.siqa_testall_mcsp_1280.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionEnabled
+  : "false"
