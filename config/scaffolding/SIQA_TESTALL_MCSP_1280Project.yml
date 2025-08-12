@@ -7,3 +7,12 @@ packages:
   gitUrl: https://github.com/rimabarman
   gitUsername: rimabarman
   gitBranch: main
+services:
+- serviceName: project.siqa_testall_mcsp_1280.integrations:EdgeFlowserviceWithExistingEdS
+  packages:
+  - name: SIQA_TESTALL_MCSP_1280Project
+    version: "1.0"
+- serviceName: pub.math:addInts
+  packages:
+  - name: WmPublic
+    version: 11.1.0.0.2068
