@@ -8,6 +8,10 @@ packages:
   gitUsername: rimabarman
   gitBranch: main
 services:
+- serviceName: project.siqa_testall_mcsp_1280.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.operations.actions:DBNewInsert1
+  packages:
+  - name: SIQA_TESTALL_MCSP_1280Project
+    version: "1.0"
 - serviceName: project.siqa_testall_mcsp_1280.integrations:AlertsCRTAndERT
   packages:
   - name: SIQA_TESTALL_MCSP_1280Project
@@ -24,6 +28,10 @@ services:
   packages:
   - name: WmPublic
     version: 11.1.0.0.2068
+- serviceName: project.siqa_testall_mcsp_1280.integrations:SIQAAdapterFlow
+  packages:
+  - name: SIQA_TESTALL_MCSP_1280Project
+    version: "1.0"
 - serviceName: project.siqa_testall_mcsp_1280.integrations:SIQA_E2E_Mon_Test
   packages:
   - name: SIQA_TESTALL_MCSP_1280Project
